@@ -1,0 +1,14 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Environments
+.venv/
+
+# Streamlit secrets (Crucial!)
+.streamlit/secrets.toml
+secrets.toml
+
+# Project specific local folders
+outputs/
+README copy.md
