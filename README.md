@@ -1,4 +1,4 @@
-# Finance Bro
+# ReceiptFlow
 ### Receipt photos in. Spreadsheet-ready expenses out.
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
@@ -6,7 +6,7 @@
 [![Roboflow](https://img.shields.io/badge/Inference-Roboflow-6706CE)](https://roboflow.com/)
 [![Export](https://img.shields.io/badge/Export-CSV%20%7C%20Excel-217346)](#spreadsheet-output)
 
-**Finance Bro turns receipt images into structured expense records you can inspect and export.** Upload a batch of receipts, extract merchant details and line items through a Roboflow workflow, review the results in a Streamlit dashboard, and download a CSV or Excel workbook.
+**ReceiptFlow turns receipt images into structured expense records you can inspect and export.** Upload a batch of receipts, extract merchant details and line items through a Roboflow workflow, review the results in a Streamlit dashboard, and download a CSV or Excel workbook.
 
 Built as a hackathon prototype to address a practical problem: recording expenses should not mean retyping every receipt.
 
@@ -18,7 +18,7 @@ Built as a hackathon prototype to address a practical problem: recording expense
 
 A receipt contains useful financial information, but a photo alone is difficult to sort, search, or analyze. Transcribing merchant names, dates, totals, and individual products into a spreadsheet is repetitive work.
 
-Finance Bro connects image-based extraction to an inspectable, portable output:
+ReceiptFlow connects image-based extraction to an inspectable, portable output:
 
 > **Upload → Extract → Review → Export**
 
@@ -75,8 +75,8 @@ flowchart LR
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/Bilolini/finance_bro.git
-cd finance_bro
+git clone https://github.com/Bilolini/receiptflow.git
+cd receiptflow
 
 python3 -m venv .venv
 source .venv/bin/activate
@@ -216,7 +216,7 @@ Streamlit provides uploads, tables, session state, and downloads in one Python a
 ## Repository guide
 
 ```text
-finance_bro/
+receiptflow/
 ├── app.py                  # UI, workflow client, parsing, and exports
 ├── requirements.txt        # Python dependencies
 ├── .gitignore              # Local environments and secrets exclusions
